@@ -6,8 +6,8 @@ class User {
   late final String name;
   late final int? following;
   late final int? followers;
-  late final List<Post>? posts;
-  late final List<Post>? favorites;
+  late final List<Post> posts;
+  late final List<Post> favorites;
 
   User({
     this.profileImageUrl = "",
@@ -15,7 +15,7 @@ class User {
     this.name = "",
     this.following,
     this.followers,
-    this.posts,
-    this.favorites,
+    this.posts = const [],
+    this.favorites = const [],
   });
 }
